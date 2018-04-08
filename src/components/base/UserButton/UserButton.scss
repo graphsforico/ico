@@ -1,0 +1,39 @@
+@import 'utils';
+
+.user-button {
+  padding: 7px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  transition: all .15s ease-in;
+  cursor: pointer;
+  border: 2px solid #f7f7f7;
+  color: #ffffff;
+  width: 130px;
+
+
+  @include hover() {
+    background: #7790e9;
+  }
+  &:active {
+    background: #214eeb;
+  }
+
+  &[disabled] {
+    background: #555;
+    border: 2px solid #f7f7f7;
+    color: #CCC;
+    cursor: wait;
+  }
+  .text {
+    font-size: 20px;
+    font-family: 'Rubik-Regular';
+
+  }
+  &.active {
+    background: #FFF;
+    color: #3866FF;
+
+  }
+}

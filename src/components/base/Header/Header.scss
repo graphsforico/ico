@@ -1,0 +1,19 @@
+@import 'utils';
+
+.base.header {
+  .header-wrapper {
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    h2 {
+      width: 100%;
+      text-align: center;
+      font-size: 34px;
+      color: #FFFFFF;
+    //  line-height: 112px;
+      margin-top: 140px;
+    }
+  }
+}
